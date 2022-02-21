@@ -2,7 +2,10 @@ import type { AppProps } from 'next/app';
 import { Layout } from 'antd';
 import '../styles/global.css';
 import 'antd/dist/antd.css';
-import '@fontsource/roboto';
+import '@fontsource/raleway';
+import '@fontsource/raleway/600.css';
+import '@fontsource/raleway/700.css';
+import '@fontsource/raleway/800.css';
 
 const { Content, Footer } = Layout;
 

@@ -1,0 +1,15 @@
+.InputField {
+  border-radius: 5rem !important;
+  padding-right: 60px;
+}
+
+.SearchButton {
+  position: absolute;
+  top: 50%;
+  right: 6.5px;
+  transform: translate(0, -50%);
+  border-radius: 5rem !important;
+  z-index: 9999;
+  width: 50px;
+  font-weight: 700;
+}

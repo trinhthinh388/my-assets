@@ -3,5 +3,18 @@
 @tailwind utilities;
 
 * {
-  font-family: Roboto, sans-serif;
+  font-family: Raleway, sans-serif;
+}
+
+.blur-container {
+  border-radius: 20px;
+  will-change: transform;
+  backface-visibility: hidden;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  box-shadow: rgb(0 0 0 / 1%) 16px 1px 14px;
+  max-width: 850px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 3rem;
 }
