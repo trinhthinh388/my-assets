@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app';
 import { Layout } from 'antd';
-import '../styles/global.css';
 import 'antd/dist/antd.css';
+import '../styles/global.css';
 import '@fontsource/raleway';
 import '@fontsource/raleway/600.css';
 import '@fontsource/raleway/700.css';

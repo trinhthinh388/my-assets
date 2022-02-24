@@ -1,17 +1,24 @@
 import type { NextPage } from 'next';
 import Searchbar from '../components/Searchbar';
+import Image from 'next/image';
 
 const Home: NextPage = () => {
   return (
-    <div
-      style={{ minHeight: 'calc(100vh - 70px)' }}
-      className="flex min-h-full items-center justify-center"
-    >
-      <div className="w-2/4 blur-container">
-        <h2 className="text-4xl font-bold">Track your history</h2>
-        <h4 className="font-medium">Supported chains</h4>
-
-        <Searchbar />
+    <div className="flex items-center justify-center min-h-screen">
+      <div
+        style={{
+          minHeight: '30vh',
+        }}
+        className="relative h-full w-full"
+      >
+        <Image
+          priority
+          src="/png/big-machine.png"
+          alt="Big coffee machine"
+          layout="fill"
+          objectFit="contain"
+          quality={100}
+        />
       </div>
     </div>
   );
