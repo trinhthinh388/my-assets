@@ -1,25 +1,45 @@
 import type { NextPage } from 'next';
-import Searchbar from '../components/Searchbar';
+import Card from '../components/Card';
 import Image from 'next/image';
+import Searchbar from '../components/Searchbar';
+import CoffeeCup from './index/CoffeeCup';
+import Cup from './index/Cup';
+import Cake from './index/Cake';
 
 const Home: NextPage = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen">
-      <div
+    <div className="relative flex items-center justify-center min-h-screen">
+      <Cup />
+      <Cake />
+
+      <Card
         style={{
-          minHeight: '30vh',
+          minHeight: '70vh',
         }}
-        className="relative h-full w-full"
+        className="max-w-full lg:max-w-3xl w-screen flex lg:items-center"
       >
-        <Image
-          priority
-          src="/png/big-machine.png"
-          alt="Big coffee machine"
-          layout="fill"
-          objectFit="contain"
-          quality={100}
-        />
-      </div>
+        <div className="w-full flex-1 lg:w-1/2 flex flex-col">
+          <h1 className="font-extrabold text-3xl">Track your transactions</h1>
+
+          {/* <Searchbar /> */}
+
+          <span>Supported chains</span>
+        </div>
+        <div
+          style={{ minHeight: 300 }}
+          className="hidden lg:block relative h-full w-1/2"
+        >
+          <Image
+            priority
+            src="/png/coffee-machine.png"
+            alt="Big coffee machine"
+            layout="fill"
+            objectFit="contain"
+            quality={100}
+          />
+        </div>
+        <CoffeeCup />
+      </Card>
     </div>
   );
 };

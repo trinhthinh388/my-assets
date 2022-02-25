@@ -9,7 +9,11 @@ export default function Searchbar() {
         size="large"
         placeholder="Address"
       />
-      <Button className={`${Styles.SearchButton}`} type="primary">
+      <Button
+        style={{ background: '#7947C9' }}
+        className={`${Styles.SearchButton}`}
+        type="primary"
+      >
         Go
       </Button>
     </Input.Group>

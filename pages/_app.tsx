@@ -6,16 +6,17 @@ import '@fontsource/raleway';
 import '@fontsource/raleway/600.css';
 import '@fontsource/raleway/700.css';
 import '@fontsource/raleway/800.css';
+import '@fontsource/raleway/900.css';
 
 const { Content, Footer } = Layout;
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Layout style={{ minHeight: '100vh' }}>
+    <Layout className="bg-gradient" style={{ minHeight: '100vh' }}>
       <Content className="px-5">
         <Component {...pageProps} />
       </Content>
-      <Footer>Meta © 2022</Footer>
+      {/* <Footer>Meta © 2022</Footer> */}
     </Layout>
   );
 }
