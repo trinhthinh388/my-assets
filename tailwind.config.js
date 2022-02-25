@@ -10,6 +10,11 @@ module.exports = {
         30: '30deg',
         25: '25deg',
       },
+      colors: ({ colors }) => ({
+        ...colors,
+        primary: '#333333',
+        secondary: '#999999',
+      }),
     },
     colors: {
       brown: '#4F3E3D',

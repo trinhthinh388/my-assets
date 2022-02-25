@@ -4,18 +4,18 @@ export default function CoffeeCup() {
   return (
     <div
       style={{
-        left: -120,
-        bottom: -120,
+        top: -150,
+        left: '25%',
       }}
-      className="hidden lg:block absolute"
+      className="hidden rotate-[224deg] lg:block fixed"
     >
       <Image
         priority
         src="/png/coffee-cup.png"
         alt="Big coffee machine"
         objectFit="contain"
-        width={300}
-        height={300}
+        width={350}
+        height={350}
         quality={100}
       />
     </div>
