@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
@@ -5,29 +7,22 @@ module.exports = {
   ],
   theme: {
     extend: {
-      rotate: {
-        62: '62deg',
-        30: '30deg',
-        25: '25deg',
+      fontFamily: {
+        sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
       },
-      colors: ({ colors }) => ({
-        ...colors,
-        primary: '#333333',
-        secondary: '#999999',
-      }),
-    },
-    colors: {
-      brown: '#4F3E3D',
-      lightBrown: '#4F453D',
-      green: '#728B75',
-      darkGreen: '#2F3D31',
-    },
-    fontWeight: {
-      extrabold: 900,
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography'), require('daisyui')],
   corePlugins: {
     preflight: false,
+  },
+  daisyui: {
+    styled: true,
+    themes: ['light', 'dark'],
+    base: true,
+    utils: true,
+    logs: true,
+    rtl: false,
+    darkTheme: 'dark',
   },
 };

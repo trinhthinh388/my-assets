@@ -1,21 +1,15 @@
-import { Input, Button } from 'antd';
-import Styles from './Searchbar.module.scss';
-
 export default function Searchbar() {
   return (
-    <Input.Group className="mb-5" compact>
-      <Input
-        className={`${Styles.InputField}`}
-        size="large"
-        placeholder="Address"
-      />
-      {/* <Button
-        style={{ background: '#7947C9' }}
-        className={`${Styles.SearchButton}`}
-        type="primary"
-      >
-        Go
-      </Button> */}
-    </Input.Group>
+    <div className="form-control w-full">
+      <div className="w-full lg:w-1/2 mx-auto input-group input-group-lg relative border border-transparent rounded-full overflow-hidden">
+        <input
+          type="text"
+          placeholder="Search…"
+          className="input w-full input-bordered bg-white input-lg"
+        />
+
+        <button className="btn btn-circle btn-lg">Go</button>
+      </div>
+    </div>
   );
 }
